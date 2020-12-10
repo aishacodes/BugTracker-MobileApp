@@ -81,9 +81,12 @@ export default function BugTracker() {
         )}
       </ScrollView>
       <View style={styles.footer}>
-        <Text style={styles.stat}>TotalBugs {bugs.length}</Text>
-        <Text style={styles.stat}>UnresolvedBugs {unresolvedBug.length}</Text>
-        <Text style={styles.stat}>ResolvedBugs {resolvedBug.length}</Text>
+        <Text style={styles.stat}>TotalBugs ({bugs.length})</Text>
+        <View style={styles.divider}></View>
+        <Text style={styles.stat}>UnresolvedBugs ({unresolvedBug.length})</Text>
+        <View style={styles.divider}></View>
+
+        <Text style={styles.stat}>ResolvedBugs ({resolvedBug.length})</Text>
       </View>
     </View>
   );
@@ -159,9 +162,13 @@ const styles = StyleSheet.create({
     backgroundColor: "#F2F2F2",
   },
   stat: {
-    marginRight: 10,
-    paddingRight: 5,
-    borderRightWidth: 1,
-    borderColor: "grey",
+    marginRight: 4,
+    paddingRight: 1,
+  },
+  divider: {
+    height: 10,
+    width: 1,
+    backgroundColor: "grey",
+    marginRight: 8,
   },
 });
