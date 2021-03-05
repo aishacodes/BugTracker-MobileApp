@@ -1,4 +1,9 @@
 # BugTracker-MobileApp
+**One of the projects for the codevillage mobile application development curriculum**
+
+## Built with
+- React native
+
 ## Contact
 If you want to contact me you can reach me at aishat@codevillage.ng or aishatabdulfatah81@gmail.com
 
